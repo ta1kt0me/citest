@@ -2,14 +2,42 @@
 
 ## Project Overview
 
-In this project, you will apply the skills you have acquired in this course to operationalize a Machine Learning Microservice API. 
+The project is flask API application to provide predict housing prices in Boston which model has been trained based on [the data source site](https://www.kaggle.com/c/boston-housing).
 
-You are given a pre-trained, `sklearn` model that has been trained to predict housing prices in Boston according to several features, such as average rooms in a home and data about highway access, teacher-to-pupil ratios, and so on. You can read more about the data, which was initially taken from Kaggle, on [the data source site](https://www.kaggle.com/c/boston-housing). This project tests your ability to operationalize a Python flask app—in a provided file, `app.py`—that serves out predictions (inference) about housing prices through API calls. This project could be extended to any pre-trained machine learning model, such as those for image recognition and data labeling.
+### Setup
+
+#### Development
+
+
+#### Docker
+
+```command
+# build an image and start up flask app
+./run_docker.sh
+
+# Open another teminal, post predict
+./make_prediction.sh
+```
+
+```command
+# push a docker image to a image registory
+docker login
+./upload_docker.sh
+```
+
+#### Kubernetes
+
+```command
+# start up flask app as kubernetes cluster
+./run_kubernetes.sh
+
+# Open another teminal, post predict
+./make_prediction.sh
+```
 
 ### Project Tasks
 
 Your project goal is to operationalize this working, machine learning microservice using [kubernetes](https://kubernetes.io/), which is an open-source system for automating the management of containerized applications. In this project you will:
-* Test your project code using linting
 * Complete a Dockerfile to containerize this application
 * Deploy your containerized application using Docker and make a prediction
 * Improve the log statements in the source code for this application
@@ -25,8 +53,17 @@ You can find a detailed [project rubric, here](https://review.udacity.com/#!/rub
 
 ## Setup the Environment
 
-* Create a virtualenv and activate it
-* Run `make install` to install the necessary dependencies
+```command
+# Setup virtualenv
+make setup
+source ~/.devops/activate
+
+# Install dependencies
+make install
+
+# Execute Lint
+make lint
+```
 
 ### Running `app.py`
 
