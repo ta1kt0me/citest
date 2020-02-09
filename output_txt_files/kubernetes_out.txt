@@ -2,32 +2,24 @@
 (Φ ω Φ> ./run_kubernetes.sh
 pod/practice created
 NAME                          READY   STATUS              RESTARTS   AGE
-hello-node-7676b5fb8d-bk7xr   1/1     Running             0          61m
-hello-node-7676b5fb8d-ws7z8   1/1     Running             0          61m
 practice                      0/1     ContainerCreating   0          0s
 error: unable to forward port because pod is not running. Current status=Pending
 (toku)16:09:37 ~/s/s/g/u/D/project-ml-microservice-kubernetes ruby:2.6.3 node:v10.18.0
 (Φ ω Φ> ./run_kubernetes.sh
 Error from server (AlreadyExists): pods "practice" already exists
 NAME                          READY   STATUS              RESTARTS   AGE
-hello-node-7676b5fb8d-bk7xr   1/1     Running             0          61m
-hello-node-7676b5fb8d-ws7z8   1/1     Running             0          61m
 practice                      0/1     ContainerCreating   0          1s
 error: unable to forward port because pod is not running. Current status=Pending
 (toku)16:09:38 ~/s/s/g/u/D/project-ml-microservice-kubernetes ruby:2.6.3 node:v10.18.0
 (Φ ω Φ> ./run_kubernetes.sh
 Error from server (AlreadyExists): pods "practice" already exists
 NAME                          READY   STATUS              RESTARTS   AGE
-hello-node-7676b5fb8d-bk7xr   1/1     Running             0          61m
-hello-node-7676b5fb8d-ws7z8   1/1     Running             0          61m
 practice                      0/1     ContainerCreating   0          3s
 error: unable to forward port because pod is not running. Current status=Pending
 (toku)16:09:40 ~/s/s/g/u/D/project-ml-microservice-kubernetes ruby:2.6.3 node:v10.18.0
 (Φ ω Φ> ./run_kubernetes.sh
 Error from server (AlreadyExists): pods "practice" already exists
 NAME                          READY   STATUS    RESTARTS   AGE
-hello-node-7676b5fb8d-bk7xr   1/1     Running   0          61m
-hello-node-7676b5fb8d-ws7z8   1/1     Running   0          61m
 practice                      1/1     Running   0          5s
 Forwarding from 127.0.0.1:8000 -> 80
 Forwarding from [::1]:8000 -> 80
